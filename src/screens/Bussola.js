@@ -7,7 +7,7 @@ export default function Bussola() {
     const [ponta, setPonta] = useState(0);
 
     useEffect(() => {
-        // Deixei o intervalo das leituras em 50 segundos para haver uma maior fluidez
+        // Deixei o intervalo das leituras em 50 milisegundos para haver uma maior fluidez
         Magnetometer.setUpdateInterval(50);
 
         const inscricao = Magnetometer.addListener((dados) => {
